@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="window1">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">PQC Analysis Tool v0.9</property>
+    <property name="resizable">False</property>
+    <property name="default-width">950</property>
+    <property name="default-height">340</property>
+    <property name="icon-name">folder</property>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="analysis">
+            <property name="label" translatable="yes">Analysis</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Make analysis to selected measurement.</property>
+            <signal name="clicked" handler="on_analysis_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">22</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="measurement">
+            <property name="width-request">152</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Measurement Type</property>
+            <attributes>
+              <attribute name="font-desc" value="Monospace Bold 11"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">75</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="diodeiv">
+            <property name="label" translatable="yes">Diode IV</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <signal name="toggled" handler="on_diodeiv_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="diodecv">
+            <property name="label" translatable="yes">Diode CV</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">diodeiv</property>
+            <signal name="toggled" handler="on_diodecv_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">125</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="moscv">
+            <property name="label" translatable="yes">MOS CV</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">diodeiv</property>
+            <signal name="toggled" handler="on_moscv_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">145</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="gcdiv">
+            <property name="label" translatable="yes">GCD IV</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">diodeiv</property>
+            <signal name="toggled" handler="on_gcdiv_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="fourwireiv">
+            <property name="label" translatable="yes">4-Wire IV</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">diodeiv</property>
+            <signal name="toggled" handler="on_fourwireiv_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">185</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="fetiv">
+            <property name="label" translatable="yes">FET IV</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">diodeiv</property>
+            <signal name="toggled" handler="on_fetiv_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">205</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="dielectricbreakdowniv">
+            <property name="label" translatable="yes">Dlctrc Brkdwn IV</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">diodeiv</property>
+            <signal name="toggled" handler="on_dielectricbreakdowniv_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">225</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="couplingcapacitancecv">
+            <property name="label" translatable="yes">Cpl Cpcitnce CV</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">diodeiv</property>
+            <signal name="toggled" handler="on_couplingcapacitancecv_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">245</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="bufferscrolledwindow">
+            <property name="width-request">300</property>
+            <property name="height-request">235</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkViewport" id="bufferviewport">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="shadow-type">none</property>
+                <child>
+                  <object class="GtkTextView" id="consolelog">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="editable">False</property>
+                    <property name="wrap-mode">char</property>
+                    <property name="left-margin">5</property>
+                    <property name="right-margin">5</property>
+                    <property name="cursor-visible">False</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">75</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="fileopenbutton">
+            <property name="label" translatable="yes">Open File(s)</property>
+            <property name="width-request">120</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_fileopenbutton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">260</property>
+            <property name="y">22</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="showbutton">
+            <property name="label" translatable="yes">Show plot(s)</property>
+            <property name="width-request">120</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_showbutton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">438</property>
+            <property name="y">22</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="openfilesscrolledwindow">
+            <property name="width-request">300</property>
+            <property name="height-request">205</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkViewport" id="openfilesviewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkTextView" id="openfileslog">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="editable">False</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">260</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="openfileslabel">
+            <property name="width-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">File(s) currently open</property>
+            <attributes>
+              <attribute name="font-desc" value="Monospace Bold 11"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">260</property>
+            <property name="y">75</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="consolelabel">
+            <property name="width-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Console</property>
+            <attributes>
+              <attribute name="font-desc" value="Monospace Bold 11"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">30</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

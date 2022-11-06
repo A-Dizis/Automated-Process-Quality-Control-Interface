@@ -1,5 +1,7 @@
 # Automated-Process-Quality-Control-Interface
 
+![alt text]([http://url/to/img.png](https://github.com/A-Dizis/Automated-Process-Quality-Control-Interface/blob/main/ToolAnalysis.png))
+
 Στα πλαίσια της διεξαγωγής των μετρήσεων στο εργαστήριο, πραγματοποιήθηκε η υλοποίηση
 προγραμματιστικά, ενός αυτοτελούς λογισμικού επεξεργασίας των μετρήσεων (σχήμα 5.14). Η
 προσπάθεια αυτή αποσκοπεί στην ενεργό εμπλοκή με την διαδικασία επεξεργασίας και παραγ-
